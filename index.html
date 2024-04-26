@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayn Portforlio Website</title>
+    <!-- Add connection to style.css -->
+    <link rel="stylesheet" href="/Website24/stlye.css"> 
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.jpg" class="logo"> -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Expertise</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Zayn</span>!<br>I am an Emotion Detection AI researcher</h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/portfolio.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me!</h1>
+                    <p>Hello, I'm Zayn, a passionate and driven Master's student pursuing a degree in Computer Science.<br>
+
+                        My journey in the world of technology has been marked by a deep fascination for Natural Language Processing (NLP) and Human-Computer Interaction (HCI), with a special focus on the multifaceted world of Emotion Detection
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('expertise')">Expertise</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="expertise">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desogning</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desogning</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desogning</li>
+                            </ul>
+                        </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- RESEARCH -->
+    <div id="research">
+        <div class="container">
+            <h1 class="sub-title">My Research</h1>
+            <div class="research-list">
+                <div>
+                    <h2>NLP Researcher</h2>
+                    <p>Focus on emotion detection through text</p>
+                    <a href="#">View my publications</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");            
+        }
+    </script>
+</body>
+</html>
