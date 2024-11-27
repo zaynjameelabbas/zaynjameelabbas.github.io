@@ -796,3 +796,20 @@ margin: 2rem 0;
     margin: 4rem auto;
     padding: 3rem 4rem;
 }
+nav .fa-solid {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    
+    nav .fa-bars {
+        margin-left: auto;
+        padding-right: 2rem;
+    }
+}
