@@ -832,3 +832,26 @@ nav .fa-solid {
         border-radius: 8px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-col-1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-col-2 {
+        text-align: center;
+        padding: 0 1.5rem;
+    }
+
+    .about-container {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+}
