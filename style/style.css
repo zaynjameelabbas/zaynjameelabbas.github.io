@@ -804,12 +804,13 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 25px;
-        padding: 1rem;
+        padding: 1rem 2rem;
         cursor: pointer;
+        background-color: #f5f5f5;
     }
     
     nav .fa-bars {
         margin-left: auto;
-        padding-right: 2rem;
+        border-radius: 8px;
     }
 }
