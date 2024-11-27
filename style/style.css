@@ -883,3 +883,30 @@ nav .fa-solid {
         font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .work-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .work {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .layer {
+        padding: 1.5rem;
+    }
+
+    .layer h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .layer p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
