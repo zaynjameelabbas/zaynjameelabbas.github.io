@@ -1,0 +1,92 @@
+.experience {
+  background-color: #0B0429;
+  padding: 100px 0;
+}
+
+.experience-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-file {
+  margin-bottom: 40px;
+}
+
+.experience-toggle {
+  display: none;
+}
+
+.experience-file-header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(11, 4, 41, 0.8);
+  border: 2px solid #00FFFF;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.experience-file-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.experience-file-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.experience-file-body {
+  display: none;
+  padding: 20px;
+  background-color: rgba(11, 4, 41, 0.8);
+  border: 2px solid #00FFFF;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.experience-toggle:checked ~ .experience-file-body {
+  display: block;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-header {
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.job-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #00FFFF;
+  margin-bottom: 5px;
+}
+
+.employment-dates {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.experience-description p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
