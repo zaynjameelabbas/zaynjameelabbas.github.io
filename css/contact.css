@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.contact {
+    background-image: url('../images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-window {
+    background-color: rgba(11, 4, 41, 0.8);
+    border: 2px solid #00FFFF;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.contact-window-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-window-buttons {
+    display: flex;
+    margin-right: 10px;
+}
+
+.contact-window-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background-color: #00FFFF;
+}
+
+.contact-title {
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    margin: 0;
+}
+
+.contact-info {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #00FFFF;
+}
+
+.contact-link i {
+    font-size: 24px;
+    margin-right: 10px;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.about {
+    background-color: #0B0429;
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.about-file {
+    background-color: rgba(11, 4, 41, 0.8);
+    border: 2px solid #00FFFF;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 40px;
+    position: relative;
+    flex-basis: calc(33.33% - 40px);
+    overflow: hidden;
+}
+
+.about-toggle {
+    display: none;
+}
+
+.about-file-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 255, 255, 0.2);
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-file-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.about-file-body {
+    padding: 20px;
+    display: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.about-toggle:checked + .about-file-header {
+    background-color: rgba(0, 255, 255, 0.4);
+}
+
+.about-toggle:checked ~ .about-file-body {
+    display: block;
+}
+
+.about-text {
+    margin-bottom: 20px;
+}
+
+.about-file-body p {
+    margin-bottom: 10px;
+}
+
+.about-file-body ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.about-file-body ul li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-file {
+        flex-basis: 100%;
+    }
+}

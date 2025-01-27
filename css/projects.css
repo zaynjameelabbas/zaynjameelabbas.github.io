@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.projects {
+    background-color: #0B0429;
+    padding: 100px 0;
+}
+
+.section-title {
+    color: #fff;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.project-item {
+    text-align: center;
+}
+
+.project-window {
+    background-color: rgba(11, 4, 41, 0.8);
+    border: 2px solid #00FFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-window-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 255, 255, 0.2);
+}
+
+.project-window-buttons {
+    display: flex;
+    margin-right: 10px;
+}
+
+.project-window-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background-color: #00FFFF;
+}
+
+.project-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.project-window-content {
+    padding: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: 500px;
+    border-radius: 4px;
+    transition: filter 0.3s ease;
+    filter: brightness(70%);
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: filter 0.3s ease;
+    filter: brightness(70%);
+}
+
+.project-image:hover {
+    filter: brightness(100%);
+}
+
+.project img {
+    /* width: 100%; */
+    max-width: auto; /* Adjust the maximum width as needed */
+    height: auto; /* Set a fixed height for the images */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+  
+
+body {
+    background-image: url('../images/projects.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.project-details {
+    background-color: rgba(11, 4, 41, 0.8);
+    border: 2px solid #00FFFF;
+    border-radius: 8px;
+    padding: 60px;
+    margin: 60px auto;
+    max-width: 1200px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.project-icon {
+    font-size: 48px;
+    margin-right: 12px;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-image-container {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-description h2,
+.project-technologies h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.technology-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.technology-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.technology-list li i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: rgba(0, 255, 255, 0.8);
+    color: #0B0429;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: rgba(0, 255, 255, 1);
+}
+
+.project-link i {
+    margin-right: 8px;
+}
+
+.project-footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.return-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: rgba(0, 255, 255, 0.8);
+    color: #0B0429;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: rgba(0, 255, 255, 1);
+}
+
+.return-button i {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-image-container {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.technology-list {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.technology-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+  
+.technology-list li i {
+    margin-right: 10px;
+    font-size: 22px;
+    color: #fffdfd;
+}
+  

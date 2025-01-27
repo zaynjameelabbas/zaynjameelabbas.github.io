@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.research {
+    background-image: url('../images/research.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 100px 0;
+}
+
+.research::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    color: #fff;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.research-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.research-file {
+    margin: 20px;
+    text-align: center;
+}
+
+.research-file a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.research-file-icon {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.research-file-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+}
+
+body {
+    background-image: url('../images/research.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.research-project {
+    background-color: rgba(11, 4, 41, 0.8);
+    border: 2px solid #00FFFF;
+    border-radius: 8px;
+    padding: 60px;
+    margin: 60px auto;
+    max-width: 1000px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.research-project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.research-project-icon {
+    font-size: 48px;
+    margin-right: 12px;
+}
+
+.research-project-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.research-project-body {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.research-project-body p {
+    margin-bottom: 30px;
+}
+
+.return-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: rgba(0, 255, 255, 0.8);
+    color: #0B0429;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: rgba(0, 255, 255, 1);
+}
+
+.return-button-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+/* Existing CSS styles */
+
+.paper-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: rgba(0, 255, 255, 0.8);
+    color: #0B0429;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.paper-button:hover {
+    background-color: rgba(0, 255, 255, 1);
+}
+  
+.paper-button-icon {
+    margin-right: 5px;
+}
+  
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.research-project-body ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+  
+.research-project-body ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+  
+.research-project-body ul li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1;
+}
+  
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+  
+.bullet-list li {
+    margin-bottom: 10px;
+}
+  
+.bullet-list li::marker {
+    color: #007bff;
+    font-size: 1.2em;
+}
