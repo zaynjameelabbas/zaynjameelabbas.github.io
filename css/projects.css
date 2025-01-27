@@ -80,8 +80,6 @@
     width: auto;
     height: auto;
     border-radius: 4px;
-    transition: filter 0.3s ease;
-    filter: brightness(70%);
 }
 
 .project-image:hover {
