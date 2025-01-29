@@ -80,6 +80,7 @@
     width: auto;
     height: auto;
     border-radius: 4px;
+    object-fit: contain;
 }
 
 .project-image:hover {
@@ -147,7 +148,7 @@ body::before {
 
 .project-image-container {
     flex: 1;
-    margin-right: 40px;
+    margin-right: 40px;;
 }
 
 .project-info {
