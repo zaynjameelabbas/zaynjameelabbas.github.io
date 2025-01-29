@@ -148,7 +148,10 @@ body::before {
 
 .project-image-container {
     flex: 1;
-    margin-right: 40px;;
+    margin-right: 40px;
+    overflow: hidden;
+    max-width: 80%;
+    max-height: 90%;
 }
 
 .project-info {
