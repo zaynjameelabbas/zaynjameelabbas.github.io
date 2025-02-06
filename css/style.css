@@ -18,15 +18,9 @@ body {
     line-height: 1.6;
     background-color: var(--light-color-1);
     color: var(--primary-color);
-    /* Remove or comment out these lines */
-    /*
-    background-image: url('../images/projects.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    */
     position: relative;
 }
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
