@@ -108,12 +108,31 @@
     left: -1.5rem;
 }
 
-@media screen and (max-width: 768px) {
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-    
+@media (max-width: 768px) {
     .about {
-        padding: 2rem 1rem;
+        padding: 60px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-file {
+        flex-basis: 100%;
+        margin: 1rem 0;
+    }
+
+    .about-file-header {
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .about-file-body {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .about-text {
+        margin-bottom: 1rem;
     }
 }

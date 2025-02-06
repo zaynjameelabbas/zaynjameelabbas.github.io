@@ -82,7 +82,23 @@
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
+    }
+
+    .project-frame {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        padding: 15px;
+    }
+
+    .projects-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
     }
 }
 

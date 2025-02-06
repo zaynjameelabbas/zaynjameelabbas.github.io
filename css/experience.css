@@ -79,9 +79,26 @@
   line-height: 1.6;
 }
 
-@media (max-width: 968px) {
-  .experience-grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-  }
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .exp-column {
+        padding: 1rem;
+    }
+
+    .column-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .exp-header {
+        padding: 0.8rem;
+    }
+
+    .exp-header h3 {
+        font-size: 1.1rem;
+    }
 }

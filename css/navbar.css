@@ -52,3 +52,34 @@
 .social-link:hover {
     color: var(--secondary-color);
 }
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--light-color-2);
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-link {
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
