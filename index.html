@@ -82,47 +82,100 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="experience-container">
-            <h2 class="experience-heading">Experience</h2>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3 class="experience-title">Graduate Research Assistant</h3>
-                    <span class="experience-toggle">+</span>
-                </div>
-                <div class="experience-content">
-                    <div class="experience-details">
-                        <div class="experience-company">University of Guelph</div>
-                        <div class="experience-date">2023 - Present</div>
-                        <p class="experience-description">
-                            Leading research in emotion detection and Natural Language Processing for social media applications. Developing innovative AI solutions that bridge technology and human psychology.
-                        </p>
-                        <div class="experience-skills">
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">NLP</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Deep Learning</span>
+            <div class="experience-grid">
+                <!-- Experience Column -->
+                <div class="exp-column">
+                    <h2 class="column-title">Experience</h2>
+                    <div class="exp-items">
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <h3>Graduate Research Assistant</h3>
+                                <span class="exp-toggle">+</span>
+                            </div>
+                            <div class="exp-content">
+                                <p class="timeline-place">University of Guelph</p>
+                                <p class="timeline-date">2023 - Present</p>
+                                <p class="timeline-description">
+                                    Researching emotion detection in social media using Natural Language Processing and Machine Learning techniques.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <h3>Software Developer</h3>
+                                <span class="exp-toggle">+</span>
+                            </div>
+                            <div class="exp-content">
+                                <p class="timeline-place">Company Name</p>
+                                <p class="timeline-date">2022 - 2023</p>
+                                <p class="timeline-description">
+                                    Developed and maintained web applications using React and Node.js.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
     
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3 class="experience-title">Computer Vision Researcher</h3>
-                    <span class="experience-toggle">+</span>
+                <!-- Education Column -->
+                <div class="exp-column">
+                    <h2 class="column-title">Education</h2>
+                    <div class="exp-items">
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <h3>Master of Computer Science</h3>
+                                <span class="exp-toggle">+</span>
+                            </div>
+                            <div class="exp-content">
+                                <p class="timeline-place">University of Guelph</p>
+                                <p class="timeline-date">2023 - Present</p>
+                                <p class="timeline-description">
+                                    Focusing on Artificial Intelligence and Human-Computer Interaction.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <h3>Bachelor of Computing</h3>
+                                <span class="exp-toggle">+</span>
+                            </div>
+                            <div class="exp-content">
+                                <p class="timeline-place">University of Guelph</p>
+                                <p class="timeline-date">2019 - 2023</p>
+                                <p class="timeline-description">
+                                    Software Engineering major with focus on AI and Machine Learning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="experience-content">
-                    <div class="experience-details">
-                        <div class="experience-company">Agricultural Technology Lab</div>
-                        <div class="experience-date">2022 - 2023</div>
-                        <p class="experience-description">
-                            Developed computer vision solutions for agricultural applications, implementing machine learning algorithms for crop analysis and monitoring.
-                        </p>
-                        <div class="experience-skills">
-                            <span class="skill-tag">Computer Vision</span>
-                            <span class="skill-tag">OpenCV</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Image Processing</span>
+    
+                <!-- Achievements Column -->
+                <div class="exp-column">
+                    <h2 class="column-title">Achievements</h2>
+                    <div class="exp-items">
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <h3>Dean's List</h3>
+                                <span class="exp-toggle">+</span>
+                            </div>
+                            <div class="exp-content">
+                                <p class="timeline-date">2019 - 2023</p>
+                                <p class="timeline-description">
+                                    Maintained academic excellence throughout undergraduate studies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <h3>Research Grant</h3>
+                                <span class="exp-toggle">+</span>
+                            </div>
+                            <div class="exp-content">
+                                <p class="timeline-date">2023</p>
+                                <p class="timeline-description">
+                                    Secured funding for emotion detection research project.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,7 +183,7 @@
         </div>
     </section>
     
-
+    
      <!-- Research Section -->
      <section id="research" class="research">
         <div class="research-container">
@@ -286,6 +339,17 @@
             });
         });
     </script>
+
+    <script>
+        document.querySelectorAll('.exp-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+    </script>
+
     <!-- <script>
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             this.classList.toggle('active');
