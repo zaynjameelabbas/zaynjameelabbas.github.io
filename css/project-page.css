@@ -230,3 +230,13 @@
     height: 100%;
     border: none;
 }
+
+.findings-list {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.findings-list li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
