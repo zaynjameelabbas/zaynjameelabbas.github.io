@@ -127,9 +127,17 @@
         font-size: 1.2rem;
     }
 
+    .about-file-icon {
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .about-file-name {
+        font-size: 16px;
+    }
+
     .about-file-body {
-        padding: 1rem;
-        font-size: 1rem;
+        padding: 15px;
     }
 
     .about-text {
