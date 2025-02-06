@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/contact.css">
-    </head> 
-    <body>
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-window">
-                        <div class="contact-window-header">
-                            <div class="contact-window-buttons">
-                                <span class="contact-window-button"></span>
-                                <span class="contact-window-button"></span>
-                                <span class="contact-window-button"></span>
-                            </div>
-                            <h2 class="contact-title">Contact Me</h2>
-                        </div>
-                        <div class="contact-window-content">
-                            <div class="contact-info">
-                                <p>Feel free to reach out to me through the following channels:</p>
-                                <ul class="contact-list">
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/zayn-j-abbas/" target="_blank" class="contact-link">
-                                            <i class="fab fa-linkedin"></i> Zayn J Abbas
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:zayn.jameel.abbas@gmail.com" class="contact-link">
-                                            <i class="fas fa-envelope"></i> zayn.jameel.abbas@gmail.com
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 class="contact-title">Let's Connect</h2>
+                    <p class="contact-text">
+                        I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            your.email@example.com
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" class="contact-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
                     </div>
                 </div>
+
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-input" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Send Message</button>
+                </form>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+</body>
 </html>

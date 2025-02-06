@@ -1,41 +1,301 @@
 <!DOCTYPE html>
-<html lang="en" class="custom-cursor">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zayn Abbas | Software Developer & NLP Researcher</title>
+    <title>Zayn Abbas - Computer Science Graduate Student</title>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-   
-<body id="home">
-    <!-- <iframe src="sections/header.html" frameborder="0" scrolling="no"></iframe> -->
-
-    <!-- Header Section -->
-    <div include-html="sections/header.html"></div>
-
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/skills.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Zayn Abbas</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://www.linkedin.com/in/zayn-j-abbas/" class="nav-link social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/zaynjameelabbas" class="nav-link social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>    
+    
     <!-- Hero Section -->
-    <div include-html="sections/hero.html"></div>
-
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                ZAYN<br>
+                ABBAS
+            </h1>
+            <p class="hero-subtitle">
+                Graduate researcher exploring AI, human-computer interaction, and psychology at University of Guelph
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="images/portfolio.jpg" alt="Zayn Abbas">
+        </div>
+    </section>
+    
     <!-- About Section -->
-    <div include-html="sections/about.html"></div>
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="about-heading">About Me</h2>
+            <p class="about-text">
+                Hi there! I'm Zayn Abbas, a graduate student at the University of Guelph pursuing a Master's degree in Computer Science. My research focuses on <span class="about-highlight">emotion detection and Natural Language Processing</span> for social media applications.
+            </p>
+            <p class="about-text">
+                I started exploring computer vision and machine learning in agriculture, and now I'm expanding into connecting Artificial Intelligence with human-computer interaction and psychology to create innovative solutions that make a difference.
+            </p>
+            <p class="about-text">
+                When I'm not coding, you'll find me gaming with friends (Red Dead Redemption is my favorite!), exploring new technologies, or traveling to experience different cultures.
+            </p>
+        </div>
+    </section>
+    
 
     <!-- Experience Section -->
-    <div include-html="sections/experience.html"></div>
+    <section id="experience" class="experience">
+        <div class="experience-container">
+            <h2 class="experience-heading">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-title">Graduate Research Assistant</h3>
+                    <span class="experience-toggle">+</span>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-details">
+                        <div class="experience-company">University of Guelph</div>
+                        <div class="experience-date">2023 - Present</div>
+                        <p class="experience-description">
+                            Leading research in emotion detection and Natural Language Processing for social media applications. Developing innovative AI solutions that bridge technology and human psychology.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-title">Computer Vision Researcher</h3>
+                    <span class="experience-toggle">+</span>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-details">
+                        <div class="experience-company">Agricultural Technology Lab</div>
+                        <div class="experience-date">2022 - 2023</div>
+                        <p class="experience-description">
+                            Developed computer vision solutions for agricultural applications, implementing machine learning algorithms for crop analysis and monitoring.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Image Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
-    <!-- Research Section -->
-    <div include-html="sections/research.html"></div>
-
+     <!-- Research Section -->
+     <section id="research" class="research">
+        <div class="research-container">
+            <h2 class="research-heading">Research</h2>
+            
+            <div class="research-item">
+                <div class="research-header">
+                    <div class="research-title-row">
+                        <h3 class="research-title">Emotion Detection in Social Media</h3>
+                        <div class="research-keywords">
+                            <span class="keyword-tag">Natural Language Processing</span>
+                            <span class="keyword-tag">Emotion AI</span>
+                            <span class="keyword-tag">Deep Learning</span>
+                        </div>
+                        <span class="research-toggle">+</span>
+                    </div>
+                </div>
+                <div class="research-content">
+                    <div class="research-details">
+                        <span class="research-year">2023 - Present</span>
+                        <p class="research-description">
+                            Developing advanced Natural Language Processing techniques to analyze and detect emotions in social media content. This research aims to improve user experience and mental health monitoring through AI-driven solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Projects Section -->
-    <div include-html="sections/projects.html"></div>
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="projects-heading">Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="#project-link" class="project-frame">
+                        <img src="images/new_grove.png" alt="Emotion Analysis Dashboard" class="project-image">
+                    </a>
+                    <div class="project-info">
+                        <a href="#project-link" class="project-title">Emotion Analysis Dashboard</a>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>                
+    
+                <div class="project-card">
+                    <a href="#project-link" class="project-frame">
+                        <img src="images/test.png" alt="Crop Analysis System" class="project-image">
+                    </a>
+                    <div class="project-info">
+                        <a href="#project-link" class="project-title">Emotion Analysis Dashboard</a>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Achievements Section -->
-    <!-- <div include-html="sections/achievements.html"></div> -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="skills-heading">Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h3 class="category-title">Frameworks & Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h3 class="category-title">Areas of Expertise</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Contact Section -->
-    <div include-html="sections/contact.html"></div>
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="contact-heading">Let's Connect!</h2>
+            <p class="contact-subheading">Feel free to reach out!</p>
+            
+            <div class="contact-links">
+                <a href="mailto:zayn.jameel.abbas@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    Email
+                </a>
+                
+                <a href="https://www.linkedin.com/in/zayn-j-abbas/" class="contact-link">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+    
 
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 
+    <script>
+        document.querySelectorAll('.experience-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 
-    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('.research-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+    <!-- <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.menu-toggle').classList.remove('active');
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+        </script> -->
 </body>
 </html>

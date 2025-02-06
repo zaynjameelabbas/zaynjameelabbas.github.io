@@ -1,54 +1,82 @@
-#achievements {
-    background-color: #f9f9f9;
-    padding: 80px 0;
+.achievements {
+  background-color: var(--light-color-2);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+.achievements-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--primary-color);
+  margin-bottom: 4rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-card {
+  background-color: var(--light-color-1);
+  padding: 2.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+}
+
+.achievement-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.achievement-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.achievement-description {
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.achievement-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+}
+
+.achievement-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .achievements {
+      padding: 80px 0;
   }
-  
-  .achievement-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
+    
+  .achievement-card {
+      padding: 2rem;
   }
-  
-  .achievement-item {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .achievement-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .achievement-icon {
-    font-size: 48px;
-    color: #007bff;
-    margin-bottom: 20px;
-  }
-  
-  .achievement-details h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .achievement-details p {
-    margin-bottom: 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
+}

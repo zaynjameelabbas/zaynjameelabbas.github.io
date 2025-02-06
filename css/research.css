@@ -1,68 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
 .research {
-    background-image: url('../images/research.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    padding: 100px 0;
+    padding: 120px 0;
+    background-color: var(--light-color-1);
 }
 
-.research::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+.research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.container {
-    position: relative;
-    z-index: 2;
+.research-heading {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
 }
 
-.section-title {
-    color: #fff;
-    font-family: 'Press Start 2P', cursive !important;
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 60px;
+.research-item {
+    margin-bottom: 2rem;
+    background-color: var(--light-color-2);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.research-item:hover {
+    transform: translateX(10px);
+}
+
+.research-header {
+    padding: 2rem;
+}
+.research-title-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.research-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.research-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    flex: 1;
+}
+
+.research-toggle {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+.keyword-tag {
+    background-color: var(--light-color-1);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
 }
 
 .research-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.research-file {
-    margin: 20px;
-    text-align: center;
+.research-item.active .research-content {
+    max-height: 1000px;
 }
 
-.research-file a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
+.research-item.active .research-toggle {
+    transform: rotate(45deg);
 }
 
-.research-file-icon {
-    font-size: 64px;
-    margin-bottom: 10px;
+.research-details {
+    padding: 0 2rem 2rem;
 }
 
-.research-file-name {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
+.research-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
 }
 
-body {
+@media (max-width: 768px) {
+    .research {
+        padding: 80px 0;
+    }
+    
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+}body {
     background-image: url('../images/research.png');
     background-size: cover;
     background-position: center;
@@ -206,4 +242,22 @@ body::before {
 .bullet-list li::marker {
     color: #007bff;
     font-size: 1.2em;
+}
+
+.research-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.research-year {
+    font-size: 1rem;
+    color: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.research-item.active .research-year {
+    opacity: 1;
 }

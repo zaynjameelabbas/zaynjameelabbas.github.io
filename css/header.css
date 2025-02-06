@@ -1,7 +1,77 @@
-header {
-    background-color: #0B0429;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(92, 59, 141, 0.4);
+:root {
+    --primary-color: #013222;
+    --secondary-color: #004D14;
+    --accent-color: #046200;
+    --light-color-1: #F6F7F2;
+    --light-color-2: #E9EDE4;
+    --light-color-3: #E1E5DC;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--light-color-1);
+    padding: 0 5vw;
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+}
+
+.header-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--secondary-color);
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.header-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--light-color-1);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.header-cta:hover {
+    transform: translateY(-2px);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 2rem;
+    }
 }
 
 .container {
@@ -89,4 +159,3 @@ nav ul li.social-icons a {
 nav ul li.social-icons a:hover {
     color: #5C3B8D;
 }
-  

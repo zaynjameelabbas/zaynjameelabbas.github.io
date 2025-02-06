@@ -4,56 +4,64 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     </head>
     <body>
         <section id="about" class="about">
             <div class="container">
                 <div class="about-content">
-                    <div class="about-file">
+                    <div class="about-file" data-aos="fade-up">
                         <input type="checkbox" id="about-toggle" class="about-toggle">
                         <label for="about-toggle" class="about-file-header">
-                            <span class="about-file-icon">📄</span>
-                            <span class="about-file-name">about.txt</span>
+                            <span class="about-file-icon">👋</span>
+                            <span class="about-file-name">About Me</span>
                         </label>
                         <div class="about-file-body">
                             <p class="about-text">
                                 Hi there! I'm Zayn Abbas, a graduate student at the University of Guelph, where I'm pursuing a Master's degree in Computer Science.
                             </p>
                             <p class="about-text">
-                                I started out exploring computer vision and machine learning in agriculture. Now I've expanded my interests to connecting Artificial Intelligence with human-computer interaction and pyschology to create innovative solutions that make a difference!
+                                I started out exploring computer vision and machine learning in agriculture. Now I've expanded my interests to connecting Artificial Intelligence with human-computer interaction and psychology to create innovative solutions that make a difference!
                             </p>
                         </div>
                     </div>
-                    <div class="about-file">
+
+                    <div class="about-file" data-aos="fade-up" data-aos-delay="100">
                         <input type="checkbox" id="education-toggle" class="about-toggle">
                         <label for="education-toggle" class="about-file-header">
-                            <span class="about-file-icon">📄</span>
-                            <span class="about-file-name">education.txt</span>
+                            <span class="about-file-icon">🎓</span>
+                            <span class="about-file-name">Education</span>
                         </label>
                         <div class="about-file-body">
-                            <p>I completed an undergraduate degree in Software Engineering at the University of Guelph!</p>
-                           
-                            <p>Currently, I'm pursuing a Master Degree in Computer Science at the University of Guelph. My interests include emotion detection and Natural Language Processing, specifically for social media.</p>
+                            <p class="about-text">I completed an undergraduate degree in Software Engineering at the University of Guelph!</p>
+                            <p class="about-text">Currently, I'm pursuing a Master Degree in Computer Science at the University of Guelph. My interests include emotion detection and Natural Language Processing, specifically for social media.</p>
                         </div>
                     </div>
-                    <div class="about-file">
+
+                    <div class="about-file" data-aos="fade-up" data-aos-delay="200">
                         <input type="checkbox" id="interests-toggle" class="about-toggle">
                         <label for="interests-toggle" class="about-file-header">
-                            <span class="about-file-icon">📄</span>
-                            <span class="about-file-name">interests.txt</span>
+                            <span class="about-file-icon">✨</span>
+                            <span class="about-file-name">Interests</span>
                         </label>
                         <div class="about-file-body">
-                            <p>Outside of my professional life, I have a variety of personal interests that keep me inspired and motivated:</p>
+                            <p class="about-text">Outside of my professional life, I have a variety of personal interests that keep me inspired and motivated:</p>
                             <ul>
-                                <li>Exploring new technologies: I enjoy staying up-to-date with the latest advancements in technology and tinkering with projects in my free time. I may post some of those projects below!</li>
-                                <li>Gaming: I love gaming with my buddies during my free time! My favourite game is Red Dead Redemption.</li>
-                                <li>Traveling: I find joy in traveling and experiencing different cultures. I'll take any opportunity to visit a new place!</li>
+                                <li>Exploring new technologies and tinkering with projects</li>
+                                <li>Gaming with buddies - Red Dead Redemption enthusiast</li>
+                                <li>Traveling and experiencing different cultures</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <script src="../js/about.js"></script> -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+        </script>
     </body>    
 </html>

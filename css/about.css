@@ -1,26 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 .about {
-    background-color: #0B0429;
-    padding: 100px 0;
+    padding: 120px 0;
+    background-color: var(--light-color-1);
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-highlight {
+    color: var(--accent-color);
+    font-weight: 500;
 }
 
 .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 0;
 }
 
 .about-file {
     background-color: rgba(11, 4, 41, 0.8);
     border: 2px solid #00FFFF;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
     position: relative;
     flex-basis: calc(33.33% - 40px);
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.about-file:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(1, 50, 34, 0.1);
 }
 
 .about-toggle {
@@ -30,54 +58,62 @@
 .about-file-header {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(0, 255, 255, 0.2);
+    padding: 1.5rem;
+    background-color: var(--light-color-3);
     cursor: pointer;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: var(--transition);
 }
 
 .about-file-icon {
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--accent-color);
 }
 
 .about-file-body {
+    max-height: 0;
+    padding: 0 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.about-toggle:checked ~ .about-file-body {
+    max-height: 500px;
     padding: 20px;
-    display: none;
-    font-family: 'Arial', sans-serif;
-    font-size: 19px;
-    line-height: 1.6;
+    opacity: 1;
 }
 
 .about-toggle:checked + .about-file-header {
     background-color: rgba(0, 255, 255, 0.4);
 }
 
-.about-toggle:checked ~ .about-file-body {
-    display: block;
-}
-
-.about-text {
-    margin-bottom: 20px;
-}
-
-.about-file-body p {
-    margin-bottom: 10px;
-}
-
 .about-file-body ul {
-    margin-bottom: 10px;
-    padding-left: 20px;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
 }
 
 .about-file-body ul li {
-    margin-bottom: 5px;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.about-file-body ul li::before {
+    content: "→";
+    color: var(--accent-color);
+    position: absolute;
+    left: -1.5rem;
 }
 
 @media screen and (max-width: 768px) {
-    .about-file {
-        flex-basis: 100%;
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about {
+        padding: 2rem 1rem;
     }
 }

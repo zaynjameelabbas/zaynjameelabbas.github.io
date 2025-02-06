@@ -3,38 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Achievements</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/achievements.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section id="achievements" class="section">
-    <div class="container">
-      <h2 class="section-title">Achievements</h2>
-      <div class="achievement-list">
-        <div class="achievement-item">
-          <div class="achievement-icon">
-            <i class="fas fa-trophy"></i>
+  <section class="achievements">
+      <div class="achievements-container">
+          <h2 class="achievements-title" data-aos="fade-up">Achievements</h2>
+            
+          <div class="achievements-grid">
+              <div class="achievement-card" data-aos="fade-up">
+                  <div class="achievement-icon">🎓</div>
+                  <h3 class="achievement-title">Master's Research</h3>
+                  <p class="achievement-description">
+                      Leading research in emotion detection and Natural Language Processing for social media applications.
+                  </p>
+                  <div class="achievement-meta">
+                      <span class="achievement-date">
+                          <i class="far fa-calendar"></i>
+                          2023 - Present
+                      </span>
+                  </div>
+              </div>
+
+              <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+                  <div class="achievement-icon">💡</div>
+                  <h3 class="achievement-title">Computer Vision Projects</h3>
+                  <p class="achievement-description">
+                      Developed innovative solutions in agricultural technology using computer vision and machine learning.
+                  </p>
+                  <div class="achievement-meta">
+                      <span class="achievement-date">
+                          <i class="far fa-calendar"></i>
+                          2022
+                      </span>
+                  </div>
+              </div>
+
+              <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="achievement-icon">🏆</div>
+                  <h3 class="achievement-title">Software Engineering</h3>
+                  <p class="achievement-description">
+                      Completed Bachelor's degree with focus on innovative software solutions and AI applications.
+                  </p>
+                  <div class="achievement-meta">
+                      <span class="achievement-date">
+                          <i class="far fa-calendar"></i>
+                          2021
+                      </span>
+                  </div>
+              </div>
           </div>
-          <div class="achievement-details">
-            <h3>Achievement 1</h3>
-            <p>Description of achievement 1.</p>
-            <a href="path/to/achievement-details-1.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        <div class="achievement-item">
-          <div class="achievement-icon">
-            <i class="fas fa-award"></i>
-          </div>
-          <div class="achievement-details">
-            <h3>Achievement 2</h3>
-            <p>Description of achievement 2.</p>
-            <a href="path/to/achievement-details-2.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        <!-- Add more achievement items as needed -->
       </div>
-    </div>
   </section>
 </body>
 </html>

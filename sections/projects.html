@@ -1,121 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/projects.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <div class="project-window">
-                            <div class="project-window-header">
-                                <div class="project-window-buttons">
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                </div>
-                                <span class="project-name">The Grove</span>
-                            </div>
-                            <div class="project-window-content">
-                                <a href="../projects/theGrove.html">
-                                    <img src="../images/TheGrove.jpg" alt="Project 1" class="project-image">
-                                </a>
-                            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="projects">
+        <div class="projects-container">
+            <h2 class="projects-title" data-aos="fade-up">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <img src="../images/midWifeMatch.jpg" alt="Project 1" class="project-image">
+                    <div class="project-content">
+                        <div class="project-type">Research Project</div>
+                        <h3 class="project-name">Emotion Detection in Social Media</h3>
+                        <p class="project-description">
+                            Developed an AI system for analyzing and detecting emotions in social media content using advanced NLP techniques.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <div class="project-window">
-                            <div class="project-window-header">
-                                <div class="project-window-buttons">
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                </div>
-                                <span class="project-name">Emotion Detection</span>
-                            </div>
-                            <div class="project-window-content">
-                                <a href="../projects/emotionDetection.html">
-                                    <img src="../images/emotionDetectionApp.jpg" alt="Project 1" class="project-image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-window">
-                            <div class="project-window-header">
-                                <div class="project-window-buttons">
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                </div>
-                                <span class="project-name">MidWife Match</span>
-                            </div>
-                            <div class="project-window-content">
-                                <a href="../projects/midwifeMatch.html">
-                                    <img src="../images/midWifeMatch.jpg" alt="Project 1" class="project-image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-window">
-                            <div class="project-window-header">
-                                <div class="project-window-buttons">
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                </div>
-                                <span class="project-name">NASA: Space Apps</span>
-                            </div>
-                            <div class="project-window-content">
-                                <a href="../projects/nasaSpace.html">
-                                    <img src="../images/SPACE.png" alt="Project 1" class="project-image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="project-item">
-                        <div class="project-window">
-                            <div class="project-window-header">
-                                <div class="project-window-buttons">
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                </div>
-                                <span class="project-name">Project 2</span>
-                            </div>
-                            <div class="project-window-content">
-                                <a href="project2.html">
-                                    <img src="../images/project2.jpg" alt="Project 2" class="project-image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-window">
-                            <div class="project-window-header">
-                                <div class="project-window-buttons">
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                    <span class="project-window-button"></span>
-                                </div>
-                                <span class="project-name">Project 3</span>
-                            </div>
-                            <div class="project-window-content">
-                                <a href="project3.html">
-                                    <img src="../images/project3.jpg" alt="Project 3" class="project-image">
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
-            </div>
-        </section>
-    </body>        
-</html>
 
+                <!-- Add more project cards as needed -->
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
