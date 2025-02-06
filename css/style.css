@@ -70,3 +70,37 @@ section h2 {
 .back-link:hover {
     transform: translateX(-10px);
 }
+
+/* Add to your global styles */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Base styles with vendor prefixes */
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Animation and transition fixes */
+.nav-link,
+.project-card,
+.exp-header,
+.process-step,
+.contact-link {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* Fix for flexbox and grid layouts */
+.experience-grid,
+.project-grid,
+.contact-grid {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
