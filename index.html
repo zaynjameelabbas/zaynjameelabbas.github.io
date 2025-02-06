@@ -362,6 +362,17 @@
 
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+
     <!-- <script>
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             this.classList.toggle('active');

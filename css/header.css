@@ -55,25 +55,11 @@
     transform: translateY(-2px);
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
 @media (max-width: 768px) {
     .header {
         padding: 0 2rem;
     }
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -130,10 +116,6 @@ nav {
 
 .nav-links a:hover span {
     display: inline;
-}
-
-.custom-cursor {
-    cursor: url('../images/cursor.png'), auto !important;
 }
 
 nav ul {
