@@ -131,5 +131,29 @@
             Back to Research
         </a>
     </div>
+
+    <script>
+        // Add this JavaScript for the active section highlighting
+        const sections = document.querySelectorAll('.process-section');
+        const navLinks = document.querySelectorAll('.process-step');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+        
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
